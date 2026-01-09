@@ -1,0 +1,27 @@
+{
+  "name": "custom-calendar",
+  "version": "1.0.0",
+  "description": "自定义日历组件 - 专为展示赛事、活动等场景设计",
+  "main": "index.ts",
+  "types": "index.ts",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "antd": "^6.1.3",
+    "dayjs": "^1.11.19",
+    "lucide-react": "^0.453.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0"
+  },
+  "keywords": [
+    "react",
+    "calendar",
+    "component",
+    "ui",
+    "event-calendar",
+    "custom-calendar"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

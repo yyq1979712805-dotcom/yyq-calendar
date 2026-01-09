@@ -1,0 +1,294 @@
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #bbfd3b;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 328px;
+  height: auto;
+  max-height: 338px;
+  box-sizing: border-box;
+}
+
+.calendar-container .ant-picker-calendar {
+  background: transparent;
+  width: 100%;
+  height: auto;
+}
+
+.calendar-container .ant-picker-panel {
+  background: transparent;
+  border: none;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.calendar-header {
+  display: flex;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  width: 100%;
+  background: #bbfd3b;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.header-content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.nav-button {
+  height: auto;
+  width: auto;
+  padding: 0;
+}
+
+.nav-button:hover {
+  background: transparent;
+}
+
+.month-year-text {
+  font-family: 'OPPOSans-Heavy', Helvetica, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #00000e;
+  font-size: 14px;
+  line-height: 9.4px;
+  white-space: nowrap;
+}
+
+.header-icon {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 64px;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-img {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  width: 24px;
+  height: 24px;
+}
+
+.calendar-container .ant-picker-calendar-header {
+  display: none;
+}
+
+.calendar-container .ant-picker-content {
+  background: #333333;
+  border-radius: 12px;
+  padding: 0;
+  margin: 0;
+  width: 328px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.calendar-container .ant-picker-content thead th {
+  font-family: 'OPPOSans-Heavy', Helvetica, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+  font-size: 10px;
+  line-height: 7.4px;
+  text-align: center;
+  padding: 0;
+  background: #333333;
+  width: calc(328px / 7);
+  height: 32px !important;
+  vertical-align: middle;
+  margin-top: -12px;
+}
+
+.calendar-container .ant-picker-cell {
+  padding: 0;
+  color: white;
+  background: #333333;
+  width: calc(328px / 7);
+  height: 46px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.calendar-container .ant-picker-cell-in-view {
+  color: white;
+}
+
+.calendar-container .ant-picker-cell-in-view .ant-picker-cell-inner {
+  color: white;
+}
+
+.calendar-container .ant-picker-cell:not(.ant-picker-cell-in-view) {
+  opacity: 0.3;
+}
+
+.calendar-container .ant-picker-cell-inner {
+  background: transparent;
+  border-radius: 0;
+  color: white;
+  font-family: 'PingFang SC', Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  overflow: hidden;
+}
+
+.calendar-container .ant-picker-cell:hover .ant-picker-cell-inner {
+  background: transparent;
+}
+
+.calendar-container .ant-picker-cell-selected .ant-picker-cell-inner,
+.calendar-container .ant-picker-cell-selected:hover .ant-picker-cell-inner {
+  background: transparent;
+  color: white;
+}
+
+.calendar-container .ant-picker-cell-today .ant-picker-cell-inner {
+  background: transparent;
+}
+
+.calendar-container .ant-picker-cell-today .ant-picker-cell-inner::before {
+  display: none;
+}
+
+.calendar-date-cell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  justify-content: flex-start;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.date-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  height: 28px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.event-badge {
+  display: flex;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  height: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  flex-shrink: 0;
+}
+
+.event-badge:hover {
+  opacity: 0.8;
+}
+
+.event-text {
+  font-family: 'OPPOSans-Bold', Helvetica, sans-serif;
+  font-weight: bold;
+  color: #00000e;
+  font-size: 8px;
+  text-align: center;
+  line-height: 8px;
+}
+
+.calendar-container tbody tr {
+  height: 46px;
+  width: 328px;
+}
+
+.calendar-container tbody tr:nth-child(5) {
+  margin-bottom: -12px;
+}
+
+.calendar-container tbody tr:nth-child(6) {
+  display: none;
+}
+
+.calendar-container .ant-picker-body {
+  padding: 0 !important;
+  margin: 0;
+  background: #333333;
+  width: 328px;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.calendar-container table {
+  background: #333333;
+  height: auto;
+  width: 328px;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0;
+  display: block;
+}
+
+.calendar-container thead {
+  margin: 0;
+  padding: 0;
+  background: #333333;
+  display: table-header-group;
+  height: 32px;
+}
+
+.calendar-container tbody {
+  height: auto;
+  width: 328px;
+  margin: 0;
+  padding: 0;
+  background: #333333;
+  display: table-row-group;
+}
+
+.current-date-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #BBFD3B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-family: 'PingFang SC', Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+}
